@@ -4,7 +4,7 @@ window.Portfolio = {
     email: 'renatorod32@gmail.com',
     github: 'https://github.com/renatiur',
     linkedin: 'https://www.linkedin.com/in/renato-fidel-rodriguez-aguila-a18997284/',
-    siteUrl: 'https://renatiur.github.io/',
+    siteUrl: 'https://renatiur.github.io/PORTAFOLIO/',
     cv: 'assets/documents/cv-renato-rodriguez.pdf',
     metrics: [
       { value: '+10', label: 'Proyectos desarrollados' },

@@ -152,19 +152,15 @@ Las plataformas sociales que no ejecutan JavaScript verán los metadatos genéri
 
 ## Publicación
 
-El proyecto está preparado para el repositorio público `renatiur.github.io`, con `index.html` en su raíz. La URL configurada es `https://renatiur.github.io/`; configurarla no significa que el sitio ya esté publicado.
+El repositorio es `https://github.com/renatiur/PORTAFOLIO` y la URL de GitHub Pages configurada es `https://renatiur.github.io/PORTAFOLIO/`. La configuración local de esta URL no activa el alojamiento.
 
-### Publicar desde Visual Studio Code
+### Activar GitHub Pages
 
-1. Abre **la carpeta PORTAFOLIO** como carpeta principal de VS Code.
-2. Abre **Control de código fuente** y selecciona **Publicar rama / Publish Branch** (o ejecuta **GitHub: Publish to GitHub** desde la paleta de comandos).
-3. Inicia sesión en GitHub con la cuenta `renatiur` cuando VS Code lo solicite.
-4. Escribe `renatiur.github.io` como nombre y elige **Publish to GitHub public repository**.
-5. En el repositorio creado, entra a **Settings → Pages**, selecciona **Deploy from a branch**, `main`, `/(root)` y guarda.
-6. Espera a que termine el despliegue y abre `https://renatiur.github.io/`.
+1. Si GitHub muestra «Upgrade or make this repository public», abre **Settings → General → Danger Zone → Change repository visibility → Change to public** y confirma el cambio.
+2. Entra a **Settings → Pages** y selecciona **Deploy from a branch**, rama `main`, carpeta `/(root)` y **Save**.
+3. Espera a que termine el despliegue en **Actions**. La web estará en `https://renatiur.github.io/PORTAFOLIO/`.
 
-Si ese repositorio ya existe en tu cuenta, no lo sobrescribas; usa otro nombre y ajusta `siteUrl` a `https://renatiur.github.io/NOMBRE/`. No se ha configurado un remoto local para permitir que **Publish to GitHub** cree y conecte el repositorio durante el inicio de sesión.
-
+El archivo `index.html` debe estar en la raíz del repositorio. Para actualizaciones posteriores, guarda los cambios, crea un commit y usa **Sincronizar cambios** en VS Code.
 
 Estos archivos son compatibles con los planes gratuitos de alojamiento estático, sujetos a las condiciones de cada proveedor. Publica el contenido de `PORTAFOLIO`, con `index.html` en la raíz elegida. No necesitas instalar paquetes ni configurar un servidor propio.
 
