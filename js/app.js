@@ -23,18 +23,6 @@
       });
     }
   });
-  document.querySelectorAll('[data-cv]').forEach(link => {
-    const url = safeUrl(config.cv, true);
-    if (url) {
-      link.href = url;
-      link.setAttribute('download', 'CV-Renato-Rodriguez.pdf');
-      link.title = 'Descargar CV de Renato Rodríguez';
-    } else {
-      link.href = 'index.html#contacto';
-      link.addEventListener('click', () => toast('El CV aún no está disponible. Puedes contactar por LinkedIn.'));
-    }
-  });
-
   const isHome = !location.pathname.endsWith('project.html');
   const navigation = document.getElementById('navigation');
   const toggle = document.querySelector('.menu-toggle');

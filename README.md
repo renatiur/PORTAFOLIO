@@ -17,7 +17,7 @@ Los scripts se cargan con `defer`, sin módulos ES ni peticiones `fetch`, para a
 - Menú móvil, navegación activa, barra de progreso, botón volver arriba y animaciones con Intersection Observer.
 - Respeto de `prefers-reduced-motion`, enlaces accesibles, foco visible y formulario con errores asociados a cada campo.
 - Formulario que valida y prepara un correo con `mailto:` cuando se configura un destinatario. Nunca afirma haber enviado un mensaje.
-- Descarga del CV proporcionado y enlaces de correo y LinkedIn configurados.
+- Enlaces de correo, GitHub y LinkedIn configurados.
 - Distribución de proyectos: tres columnas en escritorio, dos hasta 1024 px y una hasta 539 px.
 
 ## Estructura
@@ -45,7 +45,6 @@ PORTAFOLIO/
 │   │   ├── profile/
 │   │   └── backgrounds/
 │   ├── icons/favicon.svg
-│   └── documents/cv-renato-rodriguez.pdf
 ├── .gitignore
 ├── .nojekyll
 └── README.md
@@ -67,13 +66,12 @@ Edita `js/config.js`:
 | `github` | Perfil configurado: `https://github.com/renatiur`. |
 | `linkedin` | Perfil proporcionado, ya configurado. |
 | `siteUrl` | URL HTTPS pública, incluida la subcarpeta del repositorio si corresponde. |
-| `cv` | Ruta al documento descargable. |
 | `metrics` | Indicadores de la sección Sobre mí. |
 | `technologies` | Categorías y tecnologías del grid. |
 
 El correo, las fechas de experiencia y la formación se actualizaron desde el CV. GitHub está configurado con el perfil `renatiur`. No se han inventado fechas para los proyectos empresariales. Los enlaces pendientes explican su estado al activarse. El indicador `+10` proviene del requerimiento y no representa el número de fichas publicadas, que actualmente es ocho.
 
-La identidad visible y los textos editoriales se pueden modificar en `index.html`; `config.name` sirve como referencia central del perfil, pero no reemplaza automáticamente el texto del HTML ni el contenido del PDF. Los colores y las medidas están en las variables de `css/styles.css`.
+La identidad visible y los textos editoriales se pueden modificar en `index.html`; `config.name` sirve como referencia central del perfil, pero no reemplaza automáticamente el texto del HTML. Los colores y las medidas están en las variables de `css/styles.css`.
 
 ## Agregar o modificar proyectos
 
@@ -127,11 +125,9 @@ Puedes reemplazar las ilustraciones por imágenes WebP o AVIF autorizadas, prefe
 
 Las carpetas `profile` y `backgrounds` quedan reservadas para tus recursos; el diseño actual no necesita una foto. Las tarjetas usan carga diferida y dimensiones explícitas.
 
-## Configurar CV
+## CV
 
-`assets/documents/cv-renato-rodriguez.pdf` es una copia del CV proporcionado por Renato, sin modificaciones. Todos los botones descargan este documento. Para actualizarlo, reemplaza el archivo o cambia `config.cv`.
-
-El PDF conserva sus datos de contacto y DNI originales. Estos últimos no se duplican como campos de la página; el correo y LinkedIn sí aparecen como medios de contacto. Revisa el documento descargable antes de publicar si prefieres una versión pública con menos datos personales.
+El portafolio no ofrece descarga de CV y no incluye el PDF entre sus archivos publicados. El documento original se conserva fuera del repositorio.
 
 ## Contacto
 
@@ -194,7 +190,7 @@ Capturas de la versión inicial renderizada con WebKit, anteriores a la incorpor
 - WebKit: apertura directa de `index.html`, siete tarjetas presentes y sin desbordamiento horizontal a 1920, 1440, 1024, 768, 430, 390 y 360 px. Distribución de tres, dos y una columna verificada.
 - Revisión visual de capturas de escritorio y móvil.
 - JavaScriptCore con DOM simulado: filtros combinados, acentos, múltiples términos, estado vacío, restablecimiento, validación del formulario, preparación de correo, siete detalles y proyecto inexistente.
-- Análisis estático: rutas locales, anclas, identificadores únicos, etiquetas de campos, carga con `defer`, sintaxis de JS/CSS, SVG y existencia del PDF.
+- Análisis estático: rutas locales, anclas, identificadores únicos, etiquetas de campos, carga con `defer`, sintaxis de JS/CSS, SVG .
 
 La revisión visual se realizó con WebKit; la lista siguiente permite repetir la comprobación en otros navegadores y con tus datos definitivos.
 
@@ -207,7 +203,7 @@ La revisión visual se realizó con WebKit; la lista siguiente permite repetir l
 - Abrir las ocho fichas y `project.html?id=999`.
 - Navegar con Tab y Enter; cerrar el menú con Escape.
 - Validar campos vacíos y correo incorrecto; configurar un correo real para probar el enlace `mailto:` y la copia.
-- Descargar el PDF y confirmar LinkedIn.
+- Confirmar los enlaces de contacto y la ausencia de botones de descarga de CV.
 - Activar reducción de movimiento desde el sistema operativo.
 
 ## Autor
