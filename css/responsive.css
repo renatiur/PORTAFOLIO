@@ -1,0 +1,109 @@
+@media (min-width: 1600px) {
+  .container { width: min(1320px, calc(100% - 160px)); }
+  .hero { padding-top: 190px; column-gap: 100px; }
+  h1 { font-size: 66px; }
+  .hero-description { font-size: 16px; }
+  .code-content { padding-block: 22px; }
+  pre { font-size: 14px; }
+  .navigation a { font-size: 13px; }
+  .hero-bottom { margin-top: 90px; }
+}
+@media (max-width: 1190px) {
+  .container { width: calc(100% - 64px); }
+  .header-inner { gap: 20px; }
+  .navigation { gap: 13px; }
+  .navigation a { font-size: 11px; }
+  .header-actions { gap: 5px; }
+  .header-actions > [data-social="github"] { display: none; }
+  .hero { column-gap: 40px; padding-top: 150px; }
+  .hero-eyebrow { font-size: 8px; letter-spacing: .8px; }
+  h1 { font-size: 48px; }
+  .hero-role { font-size: 11px; }
+  .code-content { padding-left: 25px; padding-right: 12px; }
+  pre { font-size: 11px; }
+  .hero-tags { gap: 10px; font-size: 9px; }
+  .hero-tags span + span::before { margin-right: 10px; }
+  .project-toolbar { flex-direction: column; align-items: stretch; }
+  .search-box { width: 100%; max-width: 330px; }
+  .project-card-content { padding: 18px; }
+  .project-card h3 { font-size: 17px; }
+  .project-card-footer { flex-wrap: wrap; gap: 10px; }
+  .about-layout { gap: 40px; }
+  .contact-layout { gap: 45px; }
+  .footer-inner p { max-width: 240px; text-align: center; }
+}
+@media (max-width: 1024px) {
+  .header-inner { min-height: 75px; }
+  .menu-toggle { display: flex; flex-direction: column; gap: 4px; order: 3; margin-left: 4px; }
+  .menu-toggle span { width: 19px; height: 1.5px; background: #c5d1e6; transition: transform .2s, opacity .2s; }
+  .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(5.5px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-5.5px) rotate(-45deg); }
+  .header-actions { margin-left: auto; gap: 12px; }
+  .header-actions > [data-social="github"] { display: inline-flex; }
+  .navigation { display: none; position: absolute; top: 75px; left: 0; right: 0; background: #101721; border-bottom: 1px solid #33425a; padding: 18px 32px 25px; max-height: calc(100dvh - 75px); overflow-y: auto; }
+  .navigation.is-open { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .navigation a { padding: 11px 14px; font-size: 14px; border-radius: 5px; }
+  .navigation a.active { background: #1c2a40; }.navigation a.active::after { display: none; }
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero { column-gap: 30px; }
+  h1 { font-size: 43px; }
+  .hero-description { font-size: 13px; }
+  .hero-buttons { gap: 8px; }.hero-buttons .button { padding-inline: 13px; font-size: 12px; }
+  .orbit-label { font-size: 9px; }
+  .hero-tags { max-width: 550px; line-height: 2; }
+  .hero-bottom { margin-top: 60px; }
+  .metric { padding: 22px; }.metric span { font-size: 10px; }
+  .contact-form { padding: 23px; }.form-row { grid-template-columns: 1fr; gap: 0; }
+  .detail-layout { grid-template-columns: 1fr 260px; gap: 35px; }
+}
+@media (max-width: 767px) {
+  .container { width: calc(100% - 40px); }
+  .hero { grid-template-columns: 1fr; padding-top: 121px; }
+  h1 { font-size: clamp(44px, 8vw, 62px); }
+  .hero-eyebrow { font-size: 8px; letter-spacing: .9px; }
+  .hero-greeting { font-size: 14px; }
+  .hero-description { font-size: 14px; max-width: 500px; }
+  .hero-role { font-size: 12px; }
+  .hero-buttons .button { padding: 13px 19px; font-size: 12px; }
+  .hero-visual { width: min(450px, calc(100% - 14px)); margin: 28px auto 0; padding-top: 26px; }
+  .hero-visual::before { inset: -15px -10px; }
+  .code-content { padding: 18px 24px; }pre { font-size: 12px; }
+  .floating-card { margin-left: -8px; }
+  .hero-bottom { margin-top: 37px; flex-direction: column; align-items: flex-start; padding-top: 22px; gap: 18px; }
+  .hero-tags { font-size: 9px; gap: 8px 12px; }.hero-tags span + span::before { display: none; }.hero-tags span { border: 1px solid var(--border); padding: 3px 7px; border-radius: 4px; }
+  .scroll-cue { align-self: flex-end; }
+  .section { padding-block: 64px; }
+  .section-heading { margin-bottom: 30px; }.section-heading h2 { font-size: 32px; }
+  .about-layout { grid-template-columns: 1fr; gap: 0; }
+  .about-copy { font-size: 14px; }
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); margin-top: 28px; }
+  .metric { padding: 20px; }.metric:nth-child(3) { border-left: 0; }.metric:nth-child(n+3) { border-top: 1px solid var(--border); }.metric strong { font-size: 28px; }
+  .experience-card { padding: 21px; }.timeline { padding-left: 20px; }.experience-top { gap: 12px; flex-wrap: wrap; }.company-logo { width: 45px; height: 45px; font-size: 25px; }.experience-top h3 { font-size: 21px; }.experience-tag { margin-left: 0; }.experience-top p:last-child { font-size: 11px; }.experience-top .eyebrow { font-size: 7px; letter-spacing: 1px; }
+  .project-counter { gap: 10px; }.project-counter > span:first-child { font-size: 40px; }.project-counter > span:last-child { font-size: 8px; padding-left: 10px; }
+  .section-top { align-items: flex-start; }.section-top .section-heading { max-width: 76%; }.section-top h2 { font-size: 35px; }.section-top .section-heading > p:last-child { font-size: 12px; }.project-counter { margin-top: 43px; }.project-counter > span:last-child { display: none; }
+  .project-toolbar { gap: 15px; }.filter-button { padding: 7px 9px; font-size: 11px; }.search-box { max-width: none; }.search-box input { font-size: 13px; padding-block: 12px; }.search-box kbd { display: none; }
+  .project-result-line > span:last-child { display: none; }.projects-grid { gap: 16px; }.project-card-content { padding: 17px; }.project-card h3 { font-size: 18px; }
+  .technology-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }.technology-card, .technology-card:nth-last-child(-n+2) { grid-column: auto; padding: 22px; }.technology-card:last-child { grid-column: 1/-1; }
+  .learning-strip { flex-direction: column; gap: 16px; }.learning-strip > div { gap: 13px 20px; font-size: 11px; }
+  .education-grid { grid-template-columns: 1fr; }.education-card { padding: 26px; }.courses > div { flex-direction: column; gap: 16px; }
+  .contact-layout { grid-template-columns: 1fr; gap: 34px; }.contact-copy h2 { font-size: 43px; }.contact-copy > p:not(.eyebrow) { max-width: 470px; }.contact-form { padding: 24px; }.form-row { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }.footer-inner p { text-align: left; max-width: none; }.site-footer { padding-block: 27px; }
+  .detail-layout { grid-template-columns: 1fr; }.detail-sidebar { position: static; }.detail-header > p:last-child { font-size: 14px; }.detail-header h1 { font-size: 40px; }.project-main { padding-top: 105px; }.detail-cover { margin-block: 25px 35px; }.detail-cover img { min-height: 180px; }.next-project { align-items: flex-start; flex-direction: column; }.next-project a { font-size: 14px; }
+}
+@media (max-width: 539px) {
+  .projects-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .project-card-content { padding: 22px; }.project-card h3 { font-size: 21px; }.project-card-footer { flex-wrap: nowrap; }.project-card-description { font-size: 13px; }
+  .technology-grid { grid-template-columns: 1fr; }.technology-card:last-child { grid-column: auto; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .header-actions { gap: 3px; }.header-inner { gap: 9px; }.header-actions > [data-social="github"] { display: none; }.brand { font-size: 15px; }
+  .hero-role span { padding-inline: 3px; }.hero-role { font-size: 10px; }
+  .hero-social { gap: 13px; font-size: 10px; }
+  .hero-buttons .button { padding-inline: 13px; font-size: 11px; }
+  pre { font-size: 10px; }.code-content { padding-left: 20px; }.floating-card { padding: 12px; }.floating-spark { margin-left: 8px; }
+  .hero-eyebrow { font-size: 7px; letter-spacing: .65px; }.hero-eyebrow .status-dot { width: 5px; height: 5px; }
+  .section-top h2 { font-size: 33px; }.section-top .eyebrow { font-size: 9px; letter-spacing: 1.3px; }
+  .confidentiality-note { align-items: flex-start; text-align: left; }.confidentiality-note [data-icon] { margin-top: 3px; }
+  .detail-gallery { grid-template-columns: 1fr; }
+  input, textarea { font-size: 16px; }.field input::placeholder, .field textarea::placeholder { font-size: 12px; }
+}

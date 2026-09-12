@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Renato Rodríguez, desarrollador de software enfocado en .NET, C#, Oracle, APIs e integraciones empresariales.">
+  <meta name="keywords" content="Renato Rodríguez, desarrollador backend, .NET, C#, Oracle, SAP, portafolio">
+  <meta name="author" content="Renato Rodríguez">
+  <meta name="theme-color" content="#090c12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Renato Rodríguez — Software Developer">
+  <meta property="og:description" content="Código con propósito. Soluciones que conectan sistemas, datos y personas.">
+  <meta property="og:locale" content="es_PE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Renato Rodríguez — Software Developer">
+  <meta name="twitter:description" content="Backend, APIs e integraciones empresariales con .NET, C# y Oracle.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <script defer src="js/config.js"></script>
+  <script defer src="js/projects-data.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/animations.js"></script>
+  <title>Renato Rodríguez — Software Developer</title>
+  <script defer src="js/projects.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="Renato Rodríguez, inicio"><span class="brand-mark">r<span>.</span></span><span>renato<span class="muted">.dev</span></span></a>
+      <button class="menu-toggle icon-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span></button>
+      <nav class="navigation" id="navigation" aria-label="Navegación principal">
+        <a href="index.html#inicio" data-section="inicio">Inicio</a><a href="index.html#sobre-mi" data-section="sobre-mi">Sobre mí</a><a href="index.html#experiencia" data-section="experiencia">Experiencia</a><a href="index.html#proyectos" data-section="proyectos">Proyectos</a><a href="index.html#tecnologias" data-section="tecnologias">Tecnologías</a><a href="index.html#educacion" data-section="educacion">Educación</a><a href="index.html#contacto" data-section="contacto">Contacto</a>
+      </nav>
+      <div class="header-actions"><button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Activar modo claro" title="Activar modo claro"><svg class="icon theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="icon theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg></button><a class="icon-button" data-social="github" aria-label="GitHub" title="GitHub"><span data-icon="github"></span></a><a class="icon-button" data-social="linkedin" aria-label="LinkedIn" title="LinkedIn"><span data-icon="linkedin"></span></a><a class="button button-small button-secondary" data-cv><span data-icon="download"></span>CV</a></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="status-dot"></span> SOFTWARE DEVELOPER · BACKEND & INTEGRACIONES</div>
+        <p class="hero-greeting">Hola, soy Renato Rodríguez <span class="greeting-line"></span></p>
+        <h1 id="hero-title">Código con propósito.<br><span class="gradient-text">Soluciones que<br>conectan.</span></h1>
+        <p class="hero-role">Ingeniería de Sistemas <span>/</span> Software Developer</p>
+        <p class="hero-description">Desarrollo soluciones empresariales con <strong>.NET, C# y Oracle.</strong> Conecto sistemas, transformo procesos y construyo aplicaciones pensadas para el mundo real.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#proyectos">Ver mis proyectos <span data-icon="arrow-up-right"></span></a><a class="button button-secondary" data-cv><span data-icon="download"></span>Descargar CV</a></div>
+        <div class="hero-social"><span>Encuéntrame en</span><a data-social="github"><span data-icon="github"></span>GitHub<span data-icon="arrow-up-right"></span></a><a data-social="linkedin"><span data-icon="linkedin"></span>LinkedIn<span data-icon="arrow-up-right"></span></a></div>
+      </div>
+      <div class="hero-visual" aria-label="Perfil profesional representado en C#">
+        <div class="orbit-label"><span class="status-dot"></span> Ideas → código → soluciones</div>
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>Developer.cs</span><span data-icon="code"></span></div>
+          <div class="editor-tab"><span class="csharp">C#</span> Developer.cs <span class="tab-dot"></span></div>
+          <div class="code-content"><pre aria-label="Código C# de presentación"><code><span class="syntax-purple">public class</span> <span class="syntax-blue">Developer</span>
+{
+    <span class="syntax-purple">public string</span> Name <span class="syntax-muted">=&gt;</span>
+        <span class="syntax-green">"Renato Rodríguez"</span>;
+
+    <span class="syntax-purple">public string</span>[] Stack <span class="syntax-muted">=&gt;</span>
+    [
+        <span class="syntax-green">"C#"</span>, <span class="syntax-green">".NET"</span>,
+        <span class="syntax-green">"Oracle"</span>, <span class="syntax-green">"SQL"</span>,
+        <span class="syntax-green">"REST API"</span>, <span class="syntax-green">"JavaScript"</span>
+    ];
+
+    <span class="syntax-purple">public string</span> Focus <span class="syntax-muted">=&gt;</span>
+        <span class="syntax-green">"Backend Development"</span>;
+}</code></pre></div>
+          <div class="editor-status"><span><span data-icon="branch"></span> main <span class="build-status">✓ Sin errores</span></span><span>UTF-8 <b>C#</b></span></div>
+        </div>
+        <div class="floating-card"><span class="floating-icon" data-icon="layers"></span><div><strong>De la lógica al impacto</strong><span>Sistemas que trabajan juntos.</span></div><span class="floating-spark">✦</span></div>
+      </div>
+      <div class="hero-bottom"><div class="hero-tags"><span>Backend Developer</span><span>.NET Developer</span><span>Software Engineering</span><span>API Integration</span><span>Oracle / SQL</span></div><a href="#sobre-mi" class="scroll-cue">Explora mi trabajo <span data-icon="arrow-down"></span></a></div>
+    </section>
+    <section class="section section-bordered" id="sobre-mi" aria-labelledby="about-title"><div class="container">
+      <div class="about-layout"><div class="section-heading reveal"><p class="eyebrow"><span>01</span> SOBRE MÍ</p><h2 id="about-title">Detrás del código,<br><span class="muted">una forma de pensar.</span></h2></div><div class="about-copy reveal"><p>Soy egresado de <strong>Computación e Informática</strong> y estudiante de <strong>Ingeniería de Sistemas</strong>. Me interesa entender cómo funcionan las cosas y convertir problemas reales en soluciones de software.</p><p>Mi experiencia abarca el desarrollo y mantenimiento de sistemas empresariales, APIs REST, bases de datos Oracle y SQL, aplicaciones .NET e integraciones con servicios externos. También desarrollo con <strong>Java y Spring Boot</strong>, utilizando arquitectura MVC, persistencia de datos y control de acceso por roles.</p><p>Sigo aprendiendo sobre arquitectura de software, QA, ciberseguridad, análisis de datos y cloud. Mi enfoque: construir con criterio, aprender en el proceso y aportar al equipo.</p><div class="inline-note"><span data-icon="terminal"></span> Lógica de negocio. Datos. Conexiones.</div></div></div>
+      <div class="metrics-grid" id="metrics"></div>
+    </div></section>
+    <section class="section container" id="experiencia" aria-labelledby="experience-title"><div class="section-heading reveal"><p class="eyebrow"><span>02</span> EXPERIENCIA</p><h2 id="experience-title">Software para <span class="muted">el mundo real.</span></h2><p>Experiencia en sistemas donde cada proceso cuenta.</p></div><div class="timeline reveal"><div class="timeline-marker"></div><article class="experience-card"><div class="experience-top"><div class="company-logo">S<span>↗</span></div><div><p class="eyebrow">SISTEMAS EMPRESARIALES</p><h3>SERPOST</h3><p>Practicante de Sistemas · Noviembre 2025 – actualidad</p></div><span class="tag experience-tag">Experiencia profesional</span></div><p>Desarrollo y mantenimiento de aplicaciones para procesos operativos, comerciales y financieros. Integración entre sistemas, lógica de negocio, reportes y soluciones web.</p><ul class="experience-functions"><li>Aplicaciones .NET, APIs y servicios empresariales.</li><li>Consultas Oracle, procedimientos PL/SQL y generación de reportes.</li><li>Integraciones con SAP y automatización de procesos.</li><li>Automatización de aproximadamente el 90 % del proceso manual de alertas de declaraciones juradas.</li><li>Desarrollo de RRCC WEB para admisiones nacionales e internacionales.</li></ul><div class="tech-tags" id="experience-technologies"></div><div class="experience-projects" id="experience-projects"></div></article></div>
+      <div class="timeline reveal"><div class="timeline-marker"></div><article class="experience-card">
+        <div class="experience-top"><div class="company-logo">T</div><div><p class="eyebrow">INFRAESTRUCTURA DE COMUNICACIONES</p><h3>Telefónica Ingeniería y Seguridad</h3><p>Septiembre 2024 – mayo 2025</p></div></div>
+        <p>Proyecto: Extensión del Nuevo Aeropuerto Jorge Chávez.</p>
+        <ul class="experience-functions"><li>Organización de cableado en gabinetes y bandejas, reduciendo en un 20 % los tiempos de mantenimiento e identificación de fallas.</li><li>Supervisión de cuadrillas, instalación de cobre y fibra óptica y certificación de puntos bajo estándares TIA/EIA.</li><li>Coordinación con equipos de ingeniería eléctrica y civil y entrega de planos y reportes de certificación.</li></ul>
+        <div class="tech-tags"><span>Cat 6A</span><span>Fibra óptica</span><span>TIA/EIA</span><span>Certificación de redes</span><span>SST</span></div>
+      </article></div>
+      <div class="timeline reveal"><div class="timeline-marker"></div><article class="experience-card">
+        <div class="experience-top"><div class="company-logo">I</div><div><p class="eyebrow">SALAS TÉCNICAS Y DATA CENTERS</p><h3>Illapay Energy S.A.C.</h3><p>Mayo 2024 – septiembre 2024</p></div></div>
+        <p>Proyecto: Extensión del Nuevo Aeropuerto Jorge Chávez.</p>
+        <ul class="experience-functions"><li>Instalación y acondicionamiento de gabinetes en aproximadamente 60 salas de comunicaciones y 2 Data Centers.</li><li>Instalación y configuración de controladores EECC UM20, PDU y sensores de aniego y humedad.</li><li>Verificación de conexiones, alimentación y funcionamiento de los equipos.</li></ul>
+        <div class="tech-tags"><span>Data Center</span><span>EECC UM20</span><span>PDU</span><span>Monitoreo ambiental</span></div>
+      </article></div>
+</section>
+    <section class="section projects-section section-bordered" id="proyectos" aria-labelledby="projects-title"><div class="container"><div class="section-top"><div class="section-heading reveal"><p class="eyebrow"><span>03</span> PROYECTOS SELECCIONADOS</p><h2 id="projects-title">Menos teoría.<br><span class="gradient-text">Más soluciones.</span></h2><p>Una selección de sistemas, integraciones y herramientas<br class="desktop-break"> en los que he trabajado.</p></div><div class="project-counter"><span id="total-projects">08</span><span>proyectos<br>para explorar</span></div></div>
+      <div class="project-toolbar"><div class="filter-list" id="project-filters" role="group" aria-label="Filtrar proyectos por categoría"></div><label class="search-box"><span data-icon="search"></span><input id="project-search" type="search" placeholder="Buscar proyectos…" aria-label="Buscar proyectos" maxlength="100"><kbd aria-hidden="true">/</kbd></label></div>
+      <div class="project-result-line"><span id="project-count" role="status" aria-live="polite">Cargando proyectos…</span><span>Trabajo real. Aprendizaje continuo.</span></div>
+      <div class="projects-grid" id="projects-grid" aria-busy="true"><div class="project-skeleton" aria-hidden="true"></div><div class="project-skeleton" aria-hidden="true"></div><div class="project-skeleton" aria-hidden="true"></div></div>
+      <div class="empty-state" id="project-empty" hidden><span data-icon="search"></span><h3>No encontramos proyectos</h3><p>Prueba otra tecnología, palabra o categoría.</p><button class="button button-secondary" id="reset-filters" type="button">Limpiar filtros</button></div>
+      <p class="confidentiality-note"><span data-icon="shield"></span>Las vistas son ilustrativas. El código y los datos empresariales se mantienen privados.</p>
+      <noscript><p>Activa JavaScript para explorar los proyectos y sus detalles.</p></noscript>
+    </div></section>
+    <section class="section container" id="tecnologias" aria-labelledby="tech-title"><div class="section-heading reveal"><p class="eyebrow"><span>04</span> STACK TECNOLÓGICO</p><h2 id="tech-title">Las herramientas <span class="muted">detrás de las soluciones.</span></h2><p>Un enfoque en backend, con visión de todo el sistema.</p></div><div class="technology-grid" id="technology-grid"></div><div class="learning-strip reveal"><span><span class="status-dot"></span>Siempre aprendiendo</span><div><span>QA & Testing</span><span>Ciberseguridad</span><span>Data / BI</span><span>Cloud</span></div></div></section>
+    <section class="section section-bordered" id="educacion" aria-labelledby="education-title"><div class="container"><div class="section-heading reveal"><p class="eyebrow"><span>05</span> EDUCACIÓN</p><h2 id="education-title">Construyendo <span class="muted">una base sólida.</span></h2></div><div class="education-grid"><article class="education-card reveal"><div class="education-icon" data-icon="graduation"></div><span class="tag tag-green">En curso</span><h3>Ingeniería de Sistemas</h3><p>Universidad Peruana de Ciencias Aplicadas</p><span class="institution">UPC</span></article><article class="education-card reveal"><div class="education-icon" data-icon="graduation"></div><span class="tag">Egresado · 2025</span><h3>Computación e Informática</h3><p>Formación técnica profesional</p><span class="institution">CIBERTEC</span></article></div><div class="courses"><span class="eyebrow">FORMACIÓN COMPLEMENTARIA</span><div><span><span data-icon="award"></span>Máster SQL Server · Udemy</span><span><span data-icon="award"></span>Máster Software Testing · Udemy</span><span><span data-icon="award"></span>English for Developer &amp; IT Professionals · Desafío Latam</span><span><span data-icon="award"></span>WETALK · UPC · En curso</span></div></div></div></section>
+    <section class="section container" id="contacto" aria-labelledby="contact-title"><div class="contact-layout"><div class="contact-copy reveal"><p class="eyebrow"><span>06</span> CONTACTO</p><h2 id="contact-title">¿Construimos<br><span class="gradient-text">algo juntos?</span></h2><p>Hablemos sobre desarrollo, una oportunidad profesional o ese proyecto que tienes en mente.</p><a class="contact-social" data-social="linkedin"><span class="contact-icon" data-icon="linkedin"></span><span><strong>Conectemos en LinkedIn</strong><small>Mi perfil profesional</small></span><span data-icon="arrow-up-right"></span></a><a class="contact-social" data-social="github"><span class="contact-icon" data-icon="github"></span><span><strong>Explora mi GitHub</strong><small>Código y proyectos personales</small></span><span data-icon="arrow-up-right"></span></a><div class="contact-email"><span data-icon="mail"></span><a id="contact-email" href="mailto:renatorod32@gmail.com">renatorod32@gmail.com</a><button class="icon-button" type="button" id="copy-email" aria-label="Copiar correo" title="Copiar correo"><span data-icon="copy"></span></button></div></div>
+      <form class="contact-form" id="contact-form" novalidate><div class="form-heading"><span data-icon="message"></span><h3>Deja tu mensaje</h3></div><div class="form-row"><div class="field"><label for="name">Nombre</label><input id="name" name="name" autocomplete="name" placeholder="Tu nombre" maxlength="80" required aria-describedby="name-error"><small class="field-error" id="name-error"></small></div><div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" maxlength="150" required aria-describedby="email-error"><small class="field-error" id="email-error"></small></div></div><div class="field"><label for="subject">Asunto</label><input id="subject" name="subject" placeholder="¿Sobre qué te gustaría conversar?" maxlength="120" required aria-describedby="subject-error"><small class="field-error" id="subject-error"></small></div><div class="field"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Cuéntame un poco más…" minlength="20" maxlength="2000" required aria-describedby="message-error message-count"></textarea><div class="field-caption"><small class="field-error" id="message-error"></small><small id="message-count">0 / 2000</small></div></div><button class="button button-primary" type="submit">Enviar mensaje <span data-icon="arrow-up-right"></span></button><p class="form-note" id="contact-method">El formulario prepara un correo en tu aplicación de email. No envía mensajes automáticamente.</p><p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p><a class="button button-secondary" id="open-email" hidden>Abrir correo</a></form>
+    </div></section>
+  </main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html#inicio"><span class="brand-mark">r<span>.</span></span><span>renato<span class="muted">.dev</span></span></a><p>Hecho con intención. Y unas cuantas líneas de código.</p><span class="footer-copy">© <span id="current-year"></span> Renato Rodríguez</span></div></footer>
+  <button class="back-to-top icon-button" type="button" aria-label="Volver arriba" title="Volver arriba" hidden><span data-icon="arrow-up"></span></button>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
